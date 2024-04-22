@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
+    color: white !important;
     box-sizing: border-box;
     font-family: "Lato", sans-serif !important;
 }
@@ -11,7 +11,9 @@ header img{
     width: 70px;
     margin: 20px;
 }
-
+header nav{
+    background-color: black;
+}
 
 
 
@@ -25,6 +27,7 @@ body{
 
 /**----Footer----**/
 footer {
+    width: 100%;
     background-color: black;
     color: white;
     display: flex;
@@ -48,8 +51,9 @@ footer h2 {
     padding-right: 65px;
     padding-left: 65px;
 }
-.menu__color{
-    background-color: black;
+.navbar-toggler{
+    border: solid 3px white;
+    background-color: white;
 }
 .color__enlace{ 
     color: white !important;
@@ -65,7 +69,6 @@ footer h2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /**---BACKGROUND COLOR BLACK PARA REVISAR---**/
     justify-content: center;
 }
 .bienvenida__interior h1 {
@@ -198,7 +201,8 @@ footer h2 {
     align-items: center;
     background-color: black;
 }
-/**textos interior de cajas**/
+/**textos interior de cajas del index**/
+
 .texto__branding p{
     width: 75%;
     padding-top: 10px;
@@ -214,6 +218,101 @@ footer h2 {
     width: 75%;
 }
 /**----Servicios----**/
+.presentacion__contacto{
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 18px;
+}
+.presentacion__contacto h3 p{
+    width: 100%;
+    max-width: 1100px;
+    min-width: 300px;
+}
+
+.contenedor__tabla{
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 16px;
+}
+.table{
+    width: 100%;
+    border: 1px solid white;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+}
+.table caption{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 8px 0px;
+}
+.table tr{
+    background-color: black;
+    border: 1px solid white;
+}
+.table th, .table td{
+    font-size: 16px;
+    padding: 8px;
+    text-align: center;
+}
+.table thead th{
+    background-color: gray;
+}
+.table tbody tr:hover{
+    background-color: gray;
+}
+.table tbody td:hover{
+    background-color: darkgray;
+}
+.contenedor__contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor__contacto img{
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**---media de emergencia de la tabla----**/
+@media screen and (max-width: 600px){
+    .table{
+        border: 0px;
+    }
+    .table caption{
+        font-size: 22px;
+    }
+    .table thead{
+        display: none;
+    }
+    .table tr{
+        margin-bottom: 8px;
+        border-bottom: 4px solid gray;
+        display: block;
+    }
+    .table th, .table td{
+        font-size: 12px;
+    }
+    .table td{
+        display:block;
+        border-bottom: 1px solid gray;
+        text-align: right;
+    }
+    .table td:last-child{
+        border-bottom: 0px;
+    }
+}
+
+
+
+
+
+
 .servicios__banner{
     width: 100%;
     display: flex;
@@ -244,9 +343,11 @@ footer h2 {
     width: 55%;
     padding-top: 28px;
 }
-/**----Proyectos----**/
-/**----Grilla Habilitada Proyectos----**/
+/**----Proyectos-----
+----Grilla Habilitada de Proyectos----**/
+
 .caja__galeria {
+    width: 100%;
     background-color: black;
     padding-top: 20px;
     padding-left: 20px;
@@ -256,7 +357,7 @@ footer h2 {
     align-items: flex-start;
 }
 .caja__galeria div h1{
-    min-width: 190vh;
+    width: 350px;
     padding-top: 5px;
     margin-left: 15px;
     line-height: 50px;
@@ -264,22 +365,25 @@ footer h2 {
 }
 .caja__galeria__card {
     width: 100%;
-    margin: 15px;
-    padding-top: 15px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     display: grid;
-    /**--filas--**/
-    grid-auto-rows: auto;
-    /**--columnas**/
+    /**-- estas son filas--**/
+    grid-template-rows: auto;
+    /**-- estas son columnas**/
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    align-content: center;
+    grid-gap: 20px;
 }
-.caja__galeria__card div img {
+.caja__galeria__card .grid__item img{
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     border-radius: 12px;
 }
+
+
 /**----Contacto----**/
 .formulario__contenedor{
     width: 100%;
@@ -414,41 +518,58 @@ footer h2 {
         border-radius: 12px;
     }
 }
-@media screen and (max-width:460px) {
-    .caja__galeria__card {
+/**---Ajuste del header a 990px para que el nav funcione mejor en tablet a movil---**/
+@media screen and (max-width:990px) {
+    header nav{
         width: 100%;
-        margin: 20px;
-        display: grid;
-        /**--filas--**/
-        grid-auto-rows: 150px;
-        /**--columnas**/
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-        align-content: center;
     }
-    .caja__galeria__card div img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 12px;
+    header img{
+        display: none;
+    }
+    .navbar{
+        padding-top: 46px;
+        padding-bottom: 46px;
     }
 }
-@media screen and (max-width:340px) {
-    .caja__galeria__card {
-        width: 100%;
-        margin: 20px;
-        display: grid;
-        /**--filas--**/
-        grid-auto-rows: 100px;
-        /**--columnas**/
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-        align-content: center;
+
+
+/**---Nuevo ajuste de grilla---***/
+@media screen and (max-width:800px){
+    .caja__galeria__card{
+        width: 95%;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:10px;
+        grid-template-rows: auto;
     }
-    .caja__galeria__card div img {
+}
+@media screen and (max-width:500px){
+    .caja__galeria__card{
+        width: 90%;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .caja__galeria__card .grid__item img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+
+
+
+/**Ajuste del header y footer para movil***/
+@media screen and (max-width:390px){
+    .navbar{
+        padding-right: 0px;
+    }
+}
+@media screen and (max-width:390px){
+    footer{
+        flex-wrap: wrap;
+    }
+    footer h3{
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 12px;
+        text-align: center;
     }
 }
