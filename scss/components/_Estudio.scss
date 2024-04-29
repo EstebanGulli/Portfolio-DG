@@ -1,0 +1,32 @@
+main{
+    .servicios__banner{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        img{
+            max-width: 1920px;
+        }
+    }
+    .servicios__cajatexto{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        h2{
+            width: 100%;
+            padding-top: 15px;
+            font-size: 35px;
+            border-bottom: 1px solid white;
+            line-height: 60px;
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            width: 55%;
+            padding-top: 28px;
+        }
+    }
+}

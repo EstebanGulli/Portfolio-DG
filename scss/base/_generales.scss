@@ -1,0 +1,61 @@
+/**----Universal----**/
+* {
+    margin: 0;
+    padding: 0;
+    color: white !important;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif !important;
+}
+/*---VARIABLES DEL PROYECTO----*/
+
+/*---Paleta de colores----*/
+$color__principal: #0E62B7;
+$color__secundario: #235782;
+$color__fondo: #003F66;
+
+/*---LISTAS DE TAMAÑO TIPOGRAFIA
+IMPORTANTE PARA MANTENER UNIDADES DE MEDIDA SIMILARES----*/
+$font-size:
+12px,
+16px,
+20px,
+24px,
+30px,
+36px,
+40px;
+
+/*--EXTENDS -- EMPLEARLOS EN LOS BOTONES DEL PROYECTO PARA QUE
+CONSERVEN LAS MISMAS PROPIEDADES --*/
+%estilo__botones{
+    margin-top: 35px;
+    min-width: 450px;
+    font-size: nth($list: $font-size, $n: 3);
+    color: white;
+    background-color: $color__principal;
+    font-weight: 500;
+    border-radius: 14px;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%hover__botones{
+    &:hover{
+        background-color: white;
+        color:#0E62B7 !important;
+        font-weight: 700;
+    }
+}
+
+/**---MIXINS----**/
+
+@mixin flex($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+body{
+    background-color: $color__fondo;
+}

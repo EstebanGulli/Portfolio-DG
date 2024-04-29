@@ -1,0 +1,32 @@
+main{
+    .formulario__contenedor{
+        width: 100%;
+        padding: 35px;
+        border: solid 2px white;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        h2{
+            border-bottom: solid 2px white;
+            margin-top: 20px;
+        }
+        .accordion{
+            padding-top: 20px;
+            width: 100%;
+            h3{
+                button{
+                    font-weight: 700;
+                    color: #003F66 !important;
+                }
+            }
+            div{
+                .accordion-body{
+                    color: black !important;
+                }
+            }
+        }
+        .formulario{
+            width: 50%;
+        }
+    }
+}

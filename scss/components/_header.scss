@@ -1,0 +1,27 @@
+header{
+    .navbar{
+        padding-right: 65px;
+        padding-left: 65px;
+    }
+    nav{
+        background-color: black;
+        div{
+            a{
+                img{
+                    width: 70px;
+                    margin: 20px;
+                }
+            }
+            .navbar-toggler{
+                border: solid 2px white;
+                background-color: white;
+            }
+            div{
+                .btn:hover{
+                    color: black !important;
+                    background-color:  #0E62B7 !important;
+                }
+            }
+        }
+    }
+}
