@@ -80,6 +80,7 @@ main{
                 filter: drop-shadow(4px 6px 10px black);
                 &:hover{
                     transform: scale(1.05);
+                    transition-duration: 500ms;
                 }
             }
             .vermas__button {

@@ -30,7 +30,8 @@ main .fondo__total .bienvenida .bienvenida__interior .serviciobutton, main .fond
 main .fondo__total .bienvenida .bienvenida__interior .serviciobutton:hover, main .fondo__total .contenedor__destacado .vermas__button:hover {
   background-color: white;
   color: #0E62B7 !important;
-  font-weight: 700; }
+  font-weight: 700;
+  transition-duration: 300ms; }
 
 /**---MIXINS----**/
 body {
@@ -121,7 +122,8 @@ main .fondo__total .contenedor__destacado {
     height: 350px;
     filter: drop-shadow(4px 6px 10px black); }
     main .fondo__total .contenedor__destacado img:hover {
-      transform: scale(1.05); }
+      transform: scale(1.05);
+      transition-duration: 500ms; }
 
 main .fondo__total .contenedor__proyecto {
   width: 100%;
@@ -167,8 +169,13 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 20px; }
-  footer h3 {
-    font-weight: 300; }
+  footer a {
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 500; }
+    footer a:hover {
+      transform: scale(1.15);
+      transition-duration: 500ms; }
   footer img {
     width: 60px;
     height: 60px;
@@ -224,25 +231,24 @@ main .servicios__cajatexto {
 
 main .caja__galeria {
   width: 100%;
-  background-color: black;
-  padding-top: 20px;
-  padding-left: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start; }
-  main .caja__galeria div h1 {
-    width: 350px;
-    padding-top: 5px;
-    margin-left: 15px;
-    line-height: 50px;
-    border-bottom: solid 2px white; }
+  height: 100%;
+  background-color: black; }
+  main .caja__galeria div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .caja__galeria div h1 {
+      width: auto;
+      padding-top: 15px;
+      line-height: 50px;
+      text-align: center;
+      border-bottom: solid 2px white; }
   main .caja__galeria .caja__galeria__card {
     width: 100%;
+    max-width: 1500px;
     margin: auto;
     padding: 20px;
     margin-top: 60px;
-    margin-bottom: 60px;
     display: grid;
     /**-- estas son filas--**/
     grid-template-rows: auto;
@@ -252,8 +258,11 @@ main .caja__galeria {
     main .caja__galeria .caja__galeria__card .grid__item img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: fill;
       border-radius: 12px; }
+    main .caja__galeria .caja__galeria__card .grid__item:hover {
+      transform: scale(1.05);
+      transition-duration: 500ms; }
 
 main section .presentacion__contacto {
   width: 100%;
@@ -304,6 +313,149 @@ main section .contenedor__contacto {
     display: flex;
     justify-content: center;
     align-items: center; }
+
+/**-- En este documento se maquetara 9
+grillas para abarcar todas las imagenes
+que involucren los Proyectos de diseño para visualizarlos
+de manera oredenada y en un futuro reemplazar o añadir
+mas imagenes conforme el estudio mejore y haga mas
+proyectos de diseño**/
+/**-- Grilla de Logotipos**/
+main .Logotipos__titulo {
+  width: 100%;
+  padding-top: 25px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: solid 2px white; }
+
+main .caja__logotipos {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  padding: 30px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px; }
+  main .caja__logotipos div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 16px; }
+  main .caja__logotipos .last__child {
+    grid-column-end: span 3; }
+  main .caja__logotipos img {
+    margin: 10px;
+    width: auto;
+    height: 350px;
+    object-fit: fill; }
+  main .caja__logotipos .first__child {
+    display: flex;
+    flex-wrap: wrap;
+    grid-row-end: span 3; }
+  main .caja__logotipos .Third__child {
+    display: flex;
+    flex-wrap: wrap;
+    grid-row-end: span 3; }
+  main .caja__logotipos .remera__child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-column-end: span 3; }
+
+/**-- Grilla de Flyers**/
+/**-- Grilla de Redes sociales**/
+main .redes__box {
+  margin: 20px; }
+  main .redes__box div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    border-radius: 16px;
+    margin: 20px; }
+  main .redes__box img {
+    width: 25%;
+    margin: 20px; }
+
+/**-- Grilla de Remeras**/
+main .remera__child {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/**-- Grilla de Afiches**/
+main .caja__afiches {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  padding: 30px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px; }
+  main .caja__afiches div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 16px; }
+  main .caja__afiches img {
+    height: 560px;
+    padding: 20px; }
+
+/**-- Grilla de branding**/
+main .caja__branding {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  main .caja__branding img {
+    height: 310px;
+    padding: 10px; }
+
+/**-- Grilla de Diseños especiales**/
+main .caja__especiales {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  padding: 20px; }
+  main .caja__especiales .card {
+    background-color: #0E62B7; }
+
+/**-- Grilla de Ilustraciones**/
+main .organizador__ilustraciones {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  flex-wrap: wrap; }
+  main .organizador__ilustraciones .caja__ilustraciones {
+    width: 30%;
+    display: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 16px; }
+    main .organizador__ilustraciones .caja__ilustraciones img {
+      height: auto; }
+  main .organizador__ilustraciones .caja__ilustraciones2 {
+    width: 30%;
+    display: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 16px; }
+    main .organizador__ilustraciones .caja__ilustraciones2 img {
+      height: auto; }
 
 /**---Ajuste del header a 990px para que el nav funcione mejor en tablet a movil---**/
 @media screen and (max-width: 990px) {
