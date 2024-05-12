@@ -9,6 +9,8 @@
     <!----Bootstrap----->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--ICONOS DE BOOSTRAP APLICAR-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/stylefinal.css" />
 </head>
 
@@ -59,11 +61,10 @@
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body" style="color: #003F66">
-                            This is the first item's accordion body. It is shown by default, until the collapse plugin
-                            adds the appropriate classes that we use to style each element. These classes control the
-                            overall appearance, as well as the showing and hiding via CSS transitions. You can modify
-                            any of this with custom CSS or overriding our default variables. Though the transition does
-                            limit overflow.
+                            Por supuesto que si ! Te recomendamos contactarnos por mail a info.pceleste@gmail.com con el
+                            Asunto: Presupuesto Diseño e indicarnos los detalles por ahi. Demoraremos un plazo de maximo
+                            de 5 dias habiles en responderte. En caso de no tener respuesta puede contactarnos por
+                            nuestro numero de Whatsapp.
                         </div>
                     </div>
                 </div>
@@ -77,11 +78,11 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body" style="color: #003F66">
-                            This is the first item's accordion body. It is shown by default, until the collapse plugin
-                            adds the appropriate classes that we use to style each element. These classes control the
-                            overall appearance, as well as the showing and hiding via CSS transitions. You can modify
-                            any of this with custom CSS or overriding our default variables. Though the transition does
-                            limit overflow.
+                            Atendemos a todos aquellos que necesiten desde los diseños mas pequeños (una hoja de papel)
+                            a aquellos que requieran el diseño de manual de marca mas complejo que se pueda necesitar.
+                            La creacion completa de una identidad visual puede demorar 21 a 30 dias habiles con una
+                            elaboracion de un manual de marca completo, delimitar las reglas de la marca y generar las
+                            piezas de diseño correspondientes.
                         </div>
                     </div>
                 </div>
@@ -95,11 +96,9 @@
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body" style="color: #003F66">
-                            This is the first item's accordion body. It is shown by default, until the collapse plugin
-                            adds the appropriate classes that we use to style each element. These classes control the
-                            overall appearance, as well as the showing and hiding via CSS transitions. You can modify
-                            any of this with custom CSS or overriding our default variables. Though the transition does
-                            limit overflow.
+                            Por lo general hacemos entregas de archivos .PDF completos con toda la informacion. Tambien
+                            entregamos archivos JPG, PNG. En caso de necesitar otro archivo tipo de archivo con el
+                            diseño puede solicitarnos o consultarnos.
                         </div>
                     </div>
                 </div>
@@ -107,32 +106,50 @@
             <h2>Contacta con nosotros</h2>
             <p>Podes escribirnos un mail o un mensaje por Whatsapp, a través de ambos canales estamos disponibles
                 para atenderte de la mejor forma.</p>
-            <div class="contacto__card">
-                <h3>Nuestra informacion de contacto:</h3>
-                <p>11-3470-8924</p>
-                <p>info.pceleste@gmail.com</p>
-            </div>
-            <div class="formulario">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="ejemplo@gmail.com">
+            <div class="contacto">
+                <div class="contacto__contenedor">
+                    <div class="contacto__box">
+                        <h3>Nuestra informacion de contacto:</h3>
+                        <div class="contacto__data">
+                            <p><i class="bi bi-telephone"></i>11-3470-8924</p>
+                            <p><i class="bi bi-envelope"></i>info.pceleste@gmail.com</p>
+                        </div>
+                    </div>
+                    <div>
+                        <form>
+                            <div class="caja__input">
+                                <input type="text" placeholder="Nombre y Apellido" required="">
+                            </div>
+                            <div class="caja__input">
+                                <input type="email" required="" placeholder="Correo electrónico">
+                            </div>
+                            <div class="caja__input">
+                                <input type="text" placeholder="Asunto">
+                            </div>
+                            <div class="caja__input">
+                                <textarea placeholder="Escribi tu mensaje acá..."></textarea>
+                            </div>
+                            <div class="caja__input">
+                                <button type="button" class="btn btn-primary btn-sm">Enviar mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Escribinos tu mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <button type="button" class="btn btn-primary btn-sm">Enviar</button>
+
             </div>
         </section>
 
     </main>
     <footer>
-        <h3>Peñasco Celeste</h3>
-        <img src="../img/LogoIn.png" alt="Logotipo de instagram">
-        <img src="../img/LogoBe.png" alt="Logotipo de Behance">
-        <img src="../img/LogoLi.png" alt="Logotipo de LinkedIn">
-        <img src="../img/LogoWp.png" alt="Logotipo de Whatsapp">
+        <a class="titularfooter" href="./index.html">Peñasco Celeste</a> <!---Antes tenia un H3 ojo--->
+        <a href="https://www.instagram.com/" target="_blank"><img src="../img/LogoIn.png" alt="Link a instagram"></a>
+        <a href="https://www.behance.net/" target="_blank"><img src="../img/LogoBe.png" alt="Link a behance"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="../img/LogoLi.png" alt="Link a LinkedIn"></a>
+        <a href="https://wa.link/cmz7vp"><img src="../img/LogoWp.png" alt="Link a Whatsapp"></a>
+        <div>
+            <p>©Esteban G. • Diseñador Gráfico - 2024</p>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

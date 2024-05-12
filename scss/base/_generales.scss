@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     color: white !important;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     font-family: "Lato", sans-serif !important;
 }
 /*---VARIABLES DEL PROYECTO----*/
@@ -27,8 +27,7 @@ $font-size:
 /*--EXTENDS -- EMPLEARLOS EN LOS BOTONES DEL PROYECTO PARA QUE
 CONSERVEN LAS MISMAS PROPIEDADES --*/
 %estilo__botones{
-    margin-top: 35px;
-    min-width: 450px;
+    margin-top: 37px;
     font-size: nth($list: $font-size, $n: 3);
     color: white;
     background-color: $color__principal;

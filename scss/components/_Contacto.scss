@@ -2,7 +2,6 @@ main{
     .formulario__contenedor{
         width: 100%;
         padding: 35px;
-        border: solid 2px white;
         border-radius: 16px;
         display: flex;
         flex-direction: column;
@@ -25,8 +24,74 @@ main{
                 }
             }
         }
-        .formulario{
-            width: 50%;
+        .contacto{
+            @include flex(flex, center, center);
+            .contacto__contenedor{
+                display: grid;
+                grid-template-columns: repeat(2, 50%);
+                padding: 40px;
+                width: 90%;
+                margin: 10px 0;
+                background-image: linear-gradient(to bottom, #525457, #1e1e20);
+                border-radius: 16px;
+                .contacto__box{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    h3{
+                        margin-top: 15px;
+                    }
+                    .contacto__data{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        p{
+                            font-size: 20px;
+                            i{
+                                margin-right: 20px;
+                                font-size: 26px;
+                            }
+                        }
+                    }
+                }
+                div{
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        gap: 15px;
+                        margin: 50px 0;
+                        .caja__input{
+                            input{
+                                width: 100%;
+                                max-width: 800px;
+                                height: 45px;
+                                padding: 0 20px;
+                                outline: none;
+                                border: 3px solid transparent;
+                                transition: .3s;
+                                border-radius: 6px;
+                                color: #1e1e20 !important;
+                            }
+                            textarea{
+                                width: 100%;
+                                max-width: 800px;
+                                height: 85px;
+                                padding: 0 20px;
+                                outline: none;
+                                border: 3px solid transparent;
+                                transition: .3s;
+                                border-radius: 6px;
+                                color: #1e1e20 !important;
+                            }
+                            button{
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+
+            }
         }
     }
 }

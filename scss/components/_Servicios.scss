@@ -1,58 +1,229 @@
-main{
-    section{
-        .presentacion__contacto{
+main {
+    .presentacion__contacto {
+        width: 100%;
+        max-width: 1500px;
+        margin: auto;
+        padding: 18px;
+        h1 p {
             width: 100%;
-            max-width: 1500px;
-            margin: auto;
-            padding: 18px;
-            h1 p{
-                width: 100%;
-                max-width: 1100px;
-                min-width: 300px;
+            max-width: 1100px;
+            min-width: 300px;
+        }
+    }
+    .contenedor__cards__servicios {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 15px;
+        padding-bottom: 20px;
+
+        .tarjeta__branding {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            width: 250px;
+            height: 500px;
+            border-radius: 16px;
+            padding: 20px;
+            background-image: linear-gradient(to bottom, #525457, #1e1e20);
+            h2{
+                margin-bottom: 0px;
+                font-size: 1.8rem;
+            }
+
+            img {
+                width: 200px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+            }
+
+            button{
+                margin-top: 20px;
             }
         }
-        .contenedor__tabla{
+
+        .tarjeta__web {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            width: 250px;
+            height: 500px;
+            border-radius: 16px;
+            padding: 20px;
+            background-image: linear-gradient(to bottom, #525457, #1e1e20);
+            h2{
+                margin-bottom: 0px;
+                font-size: 1.8rem;
+            }
+            img {
+                width: 200px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+            }
+            button{
+                margin-top: 20px;
+            }
+        }
+
+        .tarjeta__editorial {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            width: 250px;
+            height: 500px;
+            border-radius: 16px;
+            padding: 20px;
+            background-image: linear-gradient(to bottom, #525457, #1e1e20);
+            h2{
+                margin-bottom: 0px;
+            }
+
+            img {
+                width: 200px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+            }
+            button{
+                margin-top: 20px;
+            }
+        }
+
+        .tarjeta__redes {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            width: 250px;
+            height: 500px;
+            border-radius: 16px;
+            padding: 20px;
+            background-image: linear-gradient(to bottom, #525457, #1e1e20);
+            h2{
+                margin-bottom: 0px;
+            }
+
+            img {
+                width: 200px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+            }
+            button{
+                margin-top: 20px;
+            }
+        }
+
+        .tarjeta__ilustracion {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            width: 250px;
+            height: 500px;
+            border-radius: 16px;
+            padding: 20px;
+            background-image: linear-gradient(to bottom, #525457, #1e1e20);
+            h2{
+                margin-bottom: 0px;
+            }
+            img {
+                width: 200px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+            }
+            button{
+                margin-top: 20px;
+            }
+        }
+
+        img {
+            width: 200px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    section {
+        .contenedor__tabla {
             width: 100%;
             max-width: 1500px;
             margin: auto;
             padding: 16px;
-            .table{
+
+            .table {
                 width: 100%;
                 border: 1px solid white;
                 margin: 0;
                 padding: 0;
                 table-layout: fixed;
-                caption{
+
+                caption {
                     font-size: 28px;
                     font-weight: bold;
                     margin: 8px 0px;
                 }
-                tr{
+
+                tr {
                     background-color: black;
                     border: 1px solid white;
                 }
-                th, td{
+
+                th,
+                td {
                     font-size: 16px;
                     padding: 8px;
                     text-align: center;
                 }
-                thead th{
+
+                thead th {
                     background-color: #3988fd;
                 }
-                tbody tr:hover{
+
+                tbody tr:hover {
                     background-color: darkgray;
                 }
-                tbody td:hover{
+
+                tbody td:hover {
                     background-color: #003f9d;
                 }
             }
         }
-        .contenedor__contacto{
+        .presentacion__contacto{
+            width: 80%;
+            text-align: center;
+        }
+
+        .contenedor__contacto {
             display: flex;
             align-items: center;
             justify-content: center;
-            img{
+            flex-wrap: wrap;
+            img {
                 width: 20%;
+                min-width: 250px;
                 padding: 20px;
                 display: flex;
                 justify-content: center;
@@ -61,3 +232,4 @@ main{
         }
     }
 }
+    

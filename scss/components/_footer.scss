@@ -5,6 +5,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 20px;
     a{
         font-size: 25px;
@@ -19,5 +20,12 @@ footer{
         width: 60px;
         height: 60px;
         margin: 10px;
+    }
+    .footer__bajada{
+        width: 100%;
+        p{
+            @include flex (flex, center, center);
+        }
+        padding-top: 10px;
     }
 }
