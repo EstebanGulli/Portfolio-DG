@@ -1,4 +1,4 @@
-footer{
+footer {
     width: 100%;
     background-color: black;
     color: white;
@@ -7,25 +7,32 @@ footer{
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
-    a{
-        font-size: 25px;
-        text-decoration: none;
-        font-weight: 500;
-        &:hover{
-            transform: scale(1.15);
-            transition-duration: 500ms;
+
+        .titularfooter {
+            a{
+                font-size: 25px;
+                text-decoration: none;
+                font-weight: 500;
+            }
+            &:hover{
+                transform: scale(1.07);
+                transition-duration: 500ms;
+            }  
         }
-    }
-    img{
+
+    img {
         width: 60px;
         height: 60px;
         margin: 10px;
     }
-    .footer__bajada{
+
+    .footer__bajada {
         width: 100%;
-        p{
+
+        p {
             @include flex (flex, center, center);
         }
+
         padding-top: 10px;
     }
 }

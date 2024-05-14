@@ -17,7 +17,6 @@ main{
     }
     .caja__logotipos{
         width: 100%;
-        max-width: 1500px;
         margin: auto;
         padding: 30px;
         display: grid;
@@ -74,6 +73,7 @@ main{
     .redes__box{
         margin: 20px;
         div{
+            min-height: 100vh;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -81,9 +81,17 @@ main{
             border-radius: 16px;
             margin: 20px;
         }
+        .redesquitar{
+            img{
+                width: 39%;
+                margin: 20px;
+                object-fit: cover;
+            }
+        }
         img{
             width: 25%;
             margin: 20px;
+            object-fit: cover;
         }
     }
 }
@@ -116,7 +124,6 @@ main{
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
         div{
-            
             display: flex;
             justify-content: center;
             align-items: center;
@@ -144,8 +151,13 @@ main{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        padding: 10px;
+        div{
+            display: flex;
+            flex-wrap: wrap;
+        }
         img{
-            height: 310px;
+            height: 35vh;
             padding: 10px;
         }
     }
@@ -158,9 +170,9 @@ main{
 main{
     .caja__especiales{
         @include flex(flex, space-evenly, space-evenly);
-        margin-top: 90px;
-        margin-bottom: 90px;
+        margin-bottom: 120px;
         padding: 20px;
+        gap: 15px;
         .card{
             background-color: $color__principal;
         }

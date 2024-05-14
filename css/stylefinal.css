@@ -171,13 +171,13 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   padding: 20px; }
-  footer a {
+  footer .titularfooter a {
     font-size: 25px;
     text-decoration: none;
     font-weight: 500; }
-    footer a:hover {
-      transform: scale(1.15);
-      transition-duration: 500ms; }
+  footer .titularfooter:hover {
+    transform: scale(1.07);
+    transition-duration: 500ms; }
   footer img {
     width: 60px;
     height: 60px;
@@ -516,7 +516,6 @@ main .Logotipos__titulo {
 
 main .caja__logotipos {
   width: 100%;
-  max-width: 1500px;
   margin: auto;
   padding: 30px;
   display: grid;
@@ -556,15 +555,21 @@ main .caja__logotipos {
 main .redes__box {
   margin: 20px; }
   main .redes__box div {
+    min-height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: black;
     border-radius: 16px;
     margin: 20px; }
+  main .redes__box .redesquitar img {
+    width: 39%;
+    margin: 20px;
+    object-fit: cover; }
   main .redes__box img {
     width: 25%;
-    margin: 20px; }
+    margin: 20px;
+    object-fit: cover; }
 
 /**-- Grilla de Remeras**/
 main .remera__child {
@@ -598,9 +603,13 @@ main .caja__branding {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding: 10px; }
+  main .caja__branding div {
+    display: flex;
+    flex-wrap: wrap; }
   main .caja__branding img {
-    height: 310px;
+    height: 35vh;
     padding: 10px; }
 
 /**-- Grilla de Diseños especiales**/
@@ -608,9 +617,9 @@ main .caja__especiales {
   display: flex;
   justify-content: space-evenly;
   align-items: space-evenly;
-  margin-top: 90px;
-  margin-bottom: 90px;
-  padding: 20px; }
+  margin-bottom: 120px;
+  padding: 20px;
+  gap: 15px; }
   main .caja__especiales .card {
     background-color: #0E62B7; }
 
@@ -933,3 +942,124 @@ main .organizador__ilustraciones {
       main .formulario__contenedor .contacto .contacto__contenedor .contacto__box .contacto__data p i {
         font-size: 20px;
         margin-right: 5px; } }
+
+/**---MediaQuery Grillas de Proyectos Importante----**/
+/**---LOGOTIPOS----**/
+@media screen and (max-width: 1200px) {
+  main .caja__logotipos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    main .caja__logotipos img {
+      margin: 10px;
+      width: 200px;
+      height: auto;
+      object-fit: fill; }
+    main .caja__logotipos .last__child {
+      width: 600px; }
+      main .caja__logotipos .last__child img {
+        width: 600px; } }
+
+/**---REDES----**/
+@media screen and (max-width: 900px) {
+  main .redes__box div {
+    flex-wrap: wrap;
+    flex-direction: column; }
+  main .redes__box img {
+    width: 50%; } }
+
+@media screen and (max-width: 500px) {
+  main .redes__box div {
+    min-height: auto; }
+  main .redes__box .redesquitar {
+    display: none; } }
+
+@media screen and (max-width: 600px) {
+  main .caja__logotipos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    main .caja__logotipos img {
+      margin: 10px;
+      width: 200px;
+      height: auto;
+      object-fit: fill; }
+    main .caja__logotipos .last__child {
+      width: 600px; }
+      main .caja__logotipos .last__child img {
+        display: none; } }
+
+/**---REMERAS----**/
+@media screen and (max-width: 1200px) {
+  .remera__child {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .remera__child img {
+      width: 600px; } }
+
+/**---AFICHES----**/
+@media screen and (max-width: 1315px) {
+  main .caja__afiches {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 450px) {
+  main .caja__afiches img {
+    width: 290px;
+    height: 400px; } }
+
+/**---BRANDING----**/
+/**---FALTA AJUSTAR ESTE MEDIA QUERI----**/
+@media screen and (max-width: 1110px) {
+  .caja__branding div img {
+    height: 25vh; } }
+
+@media screen and (max-width: 739px) {
+  .caja__branding div img {
+    height: 20vh; } }
+
+@media screen and (max-width: 739px) {
+  .caja__branding {
+    flex-direction: column !important;
+    margin: 37px; }
+    .caja__branding div img {
+      height: 15vh; } }
+
+@media screen and (max-width: 519px) {
+  .caja__branding {
+    margin: 59px;
+    flex-wrap: nowrap !important; }
+    .caja__branding div img {
+      height: 11vh; } }
+
+/**---FALTA AJUSTAR EL MEDIA QUERI DE ESPECIALES HTML----**/
+@media screen and (max-width: 590px) {
+  .caja__especiales {
+    flex-wrap: wrap;
+    margin-bottom: 10px !important; } }
+
+/**---FALTA AJUSTAR EL MEDIA QUERI DE ILUSTRACIONES HTML----**/
+@media screen and (max-width: 1315px) {
+  main .organizador__ilustraciones {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 120px; } }
+
+@media screen and (max-width: 903px) {
+  main .organizador__ilustraciones {
+    margin-top: 25px;
+    margin-bottom: 130px; }
+    main .organizador__ilustraciones .caja__ilustraciones {
+      width: 80%; }
+    main .organizador__ilustraciones .caja__ilustraciones2 {
+      width: 80%; } }
+
+@media screen and (max-width: 680px) {
+  main .organizador__ilustraciones {
+    margin-bottom: 10px; } }
